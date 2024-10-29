@@ -7,25 +7,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
-    </header>
-
-    <main>
-        <div >
-            <div class="produtos">
-                <img src="images/produto1.jpg" alt="">
+    <div class="container">
+        
+        <div class="avatar">
+            <img id="user-avatar" src="avatars/default-avatar.jpg" alt="Avatar Padrão">
+            <h3 id="user-name">Usuário não logado</h3>
+                      
+            <div class="interacoes">
+                <div class="like-curtidas">
+                    <span id="user-likes">0</span>
+                    <img src="images/curtidas.jpg" alt="Curtir" class="icon-curtida">
+                </div>
+                <div class="like-descurtidas">
+                    <span id="user-dislikes">0</span>
+                    <img src="images/descurtidas.jpg" alt="Descurtir" class="icon-descurtida">
+                </div>
             </div>
+        
+            <button id="login-btn" onclick="mostrarModal()">Entrar</button>
+            <button id="logout-btn" style="display:none;" onclick="fazerLogout()">Sair</button>
+        </div>
+         
+        <div class="coluna-direita">
+            <div id="produtos-lista">
+                
+                <div class="produto" id="produto-1">
+                    <h3>Nome do Produto 1</h3>
+                    <img src="images/produto1.jpg" alt="Produto 1">
+                    
+                    
+                    <div class="interacoes-produto">
+                        <div class="curtidas-descurtidas">
+                            <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                        </div>
 
-            <div class="produtos">
-                <img src="images/produto2.jpg" alt="">
-            </div>
+                        <div class="produto" id="produto-1">
+                            <h3>Nome do Produto 1</h3>
+                            <img src="images/produto2.jpg" alt="Produto 1">
+                            
+                            
+                            <div class="interacoes-produto">
+                                <div class="curtidas-descurtidas">
+                                    <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                                </div>
 
-            <div class="produtos">
-                <img src="images/produto3.jpg" alt="">
+                                <div class="produto" id="produto-1">
+                                    <h3>Nome do Produto 1</h3>
+                                    <img src="images/produto3.jpg" alt="Produto 1">
+                                    
+                                    
+                                    <div class="interacoes-produto">
+                                        <div class="curtidas-descurtidas">
+                                            <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                                        </div>
+
+                        <div class="comentarios">
+                            <p>Último Comentário: Ótimo produto! - São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
 
     <div class="">
         <div class="">
