@@ -1,12 +1,19 @@
-
-
-// Mostrar o modal do login
-function mostraModal() {
+// Mostrar o modal de login
+function mostrarModal() {
     document.getElementById('login-modal').style.display = 'block';
 }
 
-// fechar o modal do login
+// Fechar o modal de login
 function fecharModal() {
-    const modal = document.getElementById('login-modal')
-    modal.style.display = 'none'; // Centifique-se que estamos acessando o modal correto 
+    document.getElementById('login-modal').style.display = 'none';
 }
+
+// Fecha o modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+    const modal = document.getElementById('login-modal');
+    if (event.target === modal) {
+        fecharModal();
+    }
+};
+
+
