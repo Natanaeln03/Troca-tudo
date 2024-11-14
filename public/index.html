@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Troca tudo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,43 +33,47 @@
                 
                 <div class="produto" id="produto-1">
                     <h3>Produto 1</h3>
-                    <img src="images/produto1.jpg" alt="Produto 1">
-                    
-                    
+                    <img src="images/produto1.jpg" alt="Produto 1">                 
                     <div class="interacoes-produto">
                         <div class="curtidas-descurtidas">
-                            <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                                <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
                         </div>
 
-                        <div class="produto" id="produto-1">
-                            <h3>Produto 2</h3>
-                            <img src="images/produto2.jpg" alt="Produto 1">
-                            
-                            
-                            <div class="interacoes-produto">
-                                <div class="curtidas-descurtidas">
-                                    <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
-                                </div>
+                        <div class="comentarios">
+                            <p>Último Comentário: Ótimo produto! - São Paulo, SP</p>
+                        </div>                   
+                    </div>
+                </div>
 
-                                <div class="produto" id="produto-1">
-                                    <h3>Produto 3</h3>
-                                    <img src="images/produto3.jpg" alt="Produto 1">
-                                    
-                                    
-                                    <div class="interacoes-produto">
-                                        <div class="curtidas-descurtidas">
-                                            <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
-                                        </div>
+                <div class="produto" id="produto-1">
+                    <h3>Produto 1</h3>
+                    <img src="images/produto2.jpg" alt="Produto 1">             
+                    <div class="interacoes-produto">
+                        <div class="curtidas-descurtidas">
+                                <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                        </div>
 
                         <div class="comentarios">
                             <p>Último Comentário: Ótimo produto! - São Paulo, SP</p>
                         </div>
                     </div>
                 </div>
+                <div class="produto" id="produto-1">
+                    <h3>Produto 1</h3>
+                    <img src="images/produto3.jpg" alt="Produto 1">                         
+                    <div class="interacoes-produto">
+                        <div class="curtidas-descurtidas">
+                                <p>Curtidas: <span class="curtidas">10</span> | Descurtidas: <span class="descurtidas">2</span></p>
+                            </div>
+
+                            <div class="comentarios">
+                                <p>Último Comentário: Ótimo produto! - São Paulo, SP</p>
+                            </div>
+                        </div>                   
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
     <div id="login-modal" class="modal">
@@ -82,6 +86,48 @@
             <p id="login-error" style="color: red;"></p>
         </div>
     </div>
+
+    <div id="comentario-modal" class="modal">
+        <div class="modal-content comentario-modal">
+            <span class="close" onclick="fecharComentarioModal()">&times;</span>
+            <h2>Comentário</h2>
+            
+            <textarea id="comentario-texto" rows="4" placeholder="Digite seu comentário"></textarea>
+            
+            <div class="comentario-localizacao">
+                <input type="text" id="cidade" placeholder="Cidade">
+                <input type="text" id="estado" placeholder="Estado">
+            </div>
+            
+            <div class="comentario-botoes">
+                <button onclick="adicionarOuEditarComentario()">Salvar</button>
+                <button onclick="excluirComentario()">Excluir</button>
+            </div>
+
+            <p id="comentario-mensagem" style="color: red;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="company-name">Troca Tudo</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="icons/tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="icons/x.svg" alt="X"></a>
+            </div>
+
+            <div class="footer-right">
+                <p>&copy; 2024 By Hilton Elias.</p>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="app.js"></script>
 

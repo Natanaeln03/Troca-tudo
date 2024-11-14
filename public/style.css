@@ -120,3 +120,84 @@ button:hover {
     font-size: 20px;
     cursor: pointer;
 }
+
+.comentario-modal {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comentario-localizacao {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comentario-localizacao input,
+#comentario-texto {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#comentario-texto {
+    width: 100%;
+    resize: vertical;
+}
+
+.comentario-botoes button {
+    width: 48%; 
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: #007BFF;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.comentario-botoes button:hover {
+    background-color: #0056b3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.footer-left .company-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.footer-center img {
+    width: 30px; 
+    height: 30px;
+}
+
+
+.footer-right {
+    font-size: 1em;
+    text-align: right;
+}
